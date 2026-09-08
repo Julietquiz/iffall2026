@@ -1,0 +1,38 @@
+body {
+    background-image: url("paul.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: lora;
+    color: rgb(242, 234, 224);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: lora;
+    font-style: italic;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 90px;
+}
+
+iframe {
+    position: sticky;
+    bottom: 20px;
+    margin-left: auto;
+    display: block;
+}
