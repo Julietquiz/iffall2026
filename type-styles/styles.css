@@ -1,0 +1,70 @@
+html{
+    body {
+    font-family: "raleway-v20-deprecated", sans-serif;
+    font-size: 20px;
+    margin: 40px;
+    background-color: rgb(240, 226, 228);
+    }
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.summary {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+/* FONT WEIGHT */
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* FONT STYLE */
+
+.italic {
+    font-style: italic;
+}
+
+
+/* LETTER SPACING */
+
+.spaced {
+    letter-spacing: 5px;
+}
+
+
+/* TEXT TRANSFORM */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+/* TEXT DECORATION */
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
