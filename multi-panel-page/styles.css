@@ -1,0 +1,164 @@
+
+body {
+    margin: 0;
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+/* GENERAL TEXT STYLING */
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 16px;
+    color: rgb(147, 165, 181);
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    color: rgb(152, 86, 123);
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 160, 223);
+}
+
+
+
+.content-column {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* panel 1: header */
+
+header {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header .content-column {
+    padding-top: 166px;
+    padding-bottom: 188px;
+}
+
+/* Panel 2: big image */
+
+section:first-of-type {
+    background-color: rgb(101, 73, 107);
+    padding-top: 40.5px;
+    padding-bottom: 70px;
+}
+
+.first-image {
+    float: right;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 32px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    border: solid rgb(255, 241, 241) 2px;
+}
+
+.content-column p {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 13.5px;
+    line-height: 25.2px;
+    margin-bottom: -15px;
+    color: rgb(147, 165, 181);
+}
+
+/* panel 3: photo grid */
+
+section:nth-of-type(2) {
+    background-color: rgb(235, 202, 219);
+    padding-top: 40.5px;
+    padding-bottom: 66px;
+}
+
+.grid-container {
+    list-style: none;
+    padding: 0;
+    padding-top: 31px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 24px;
+}
+
+.grid-container li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.grid-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text-content h4 {
+    margin: 0;
+    font-size: 20px;
+    color: rgb(101, 73, 107);
+}
+
+.text-content div {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    max-width: 30ch;
+    color: rgb(101, 73, 107);
+}
+
+/* Panel 4 just text*/
+
+section:nth-of-type(3) {
+    background-color: rgb(123, 125, 169);
+    padding-top: 39px;
+    padding-bottom: 83px;
+    color: rgb(101, 73, 107);
+}
+
+section:last-of-type .content-column p {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 36.5px;
+    max-width: 60ch;
+    margin: 17px auto;
+}
+
+/* Panel 5: footer */
+
+footer {
+    background-color: antiquewhite;
+    padding-top: 9px;
+    padding-bottom: 73px;
+    color: rgb(101, 73, 107);
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0;
+}
