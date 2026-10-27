@@ -1,0 +1,371 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.button_container {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*BOTANIC GARDENS*/
+
+#btn_garden {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    width: 220px;
+    height: 100px;
+    margin: 80px auto 0;
+
+    background-color: #1c3223;
+    color: rgb(255, 248, 217);
+
+    border: 2px solid #315d40;
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: all 0.4s;
+}
+
+.garden-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    line-height: 1;
+    text-align: center;
+}
+
+.garden-flower {
+    position: absolute;
+    font-size: 35px;
+    color: #e5b66b;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.garden-flower:first-child {
+    top: -20px;
+    left: 0;
+    transform: scale(0);
+}
+
+.garden-flower:last-child {
+    bottom: -20px;
+    right: 0;
+    transform: scale(0);
+}
+
+#btn_garden:hover {
+    background-color: #0e4113;
+    transform: scale(1.05);
+}
+
+#btn_garden:hover .garden-flower {
+    opacity: 1;
+    transform: scale(1) rotate(25deg);
+}
+
+
+/* MICHAEL KORS*/
+
+#btn_kors {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    width: 220px;
+    height: 70px;
+    margin: 95px auto 0;
+
+    background-color: black;
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+
+    transition: all 0.4s;
+}
+
+#btn_kors span {
+    position: relative;
+    z-index: 1;
+}
+
+#btn_kors::before {
+    content: "";
+    position: absolute;
+
+    width: 60px;
+    height: 200px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 215, 130, 0.7),
+        transparent
+    );
+
+    transform: translateX(-200px) rotate(30deg);
+
+    transition: transform 0.7s;
+}
+
+#btn_kors:hover {
+    background-color: #26211a;
+    transform: translateY(-5px);
+}
+
+#btn_kors:hover::before {
+    transform: translateX(250px) rotate(30deg);
+}
+
+
+/*NEW YORKER*/
+
+#btn_newyorker {
+    display: block;
+    position: relative;
+
+    width: 190px;
+    height: 160px;
+    margin: 50px auto 0;
+
+    text-decoration: none;
+
+    font-family: 'Libre Baskerville', serif;
+
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.ny-front,
+.ny-back {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    border: 1px solid black;
+    background-color: #fffdf5;
+    color: black;
+
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+.ny-front {
+    font-size: 20px;
+}
+
+.ny-back {
+    font-size: 16px;
+    transform: rotateY(180deg);
+}
+
+#btn_newyorker:hover {
+    transform: rotateY(180deg);
+}
+
+
+/*INSTAGRAM*/
+
+#btn_instagram {
+    display: block;
+    position: relative;
+
+    width: 150px;
+    height: 150px;
+    margin: 55px auto 0;
+
+    border-radius: 35px;
+
+    background: linear-gradient(
+        35deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+
+    transition: all 0.4s;
+}
+
+.insta-camera {
+    position: absolute;
+
+    width: 85px;
+    height: 85px;
+
+    top: 32px;
+    left: 32px;
+
+    border: 7px solid white;
+    border-radius: 25px;
+    box-sizing: border-box;
+
+    transition: transform 0.4s;
+}
+
+.insta-camera::before {
+    content: "";
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    top: 10px;
+    right: 10px;
+
+    border-radius: 50%;
+    background: white;
+}
+
+.insta-lens {
+    position: absolute;
+
+    width: 35px;
+    height: 35px;
+
+    top: 18px;
+    left: 18px;
+
+    border: 6px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#btn_instagram:hover {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+#btn_instagram:hover .insta-camera {
+    transform: rotate(10deg);
+}
+
+#btn_instagram:hover .insta-heart {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* COKE */
+
+#btn_coke {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    width: 220px;
+    height: 85px;
+    margin: 85px auto 0;
+
+    background-color: #e41e2b;
+    color: white;
+
+    border-radius: 50px;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+
+.coke-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 34px;
+
+    transform: rotate(-5deg);
+}
+
+.bubble {
+    position: absolute;
+    bottom: 25px;
+
+    width: 12px;
+    height: 12px;
+
+    border: 2px solid red;
+    border-radius: 50%;
+
+    opacity: 0;
+}
+
+.bubble1 {
+    left: 20%;
+}
+
+.bubble2 {
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    animation-delay: 0.3s;
+}
+
+.bubble3 {
+    left: 80%;
+    animation-delay: 0.6s;
+}
+
+#btn_coke:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 0 #a81320;
+}
+
+#btn_coke:hover .bubble {
+    animation-name: fizz;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fizz {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(0.5);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-120px) scale(1.3);
+    }
+}
+
+
+.button_container a:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 4px;
+}
